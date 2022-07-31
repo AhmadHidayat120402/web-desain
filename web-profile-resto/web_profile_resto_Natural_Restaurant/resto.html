@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natural Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          $('i').css({
+            "opacity": "1", "pointer-events": "auto"
+          });
+        } else {
+          $('i').css({
+            "opacity": "0", "pointer-events": "none"
+          });
+        }
+      });
+      $('i').click(function () {
+        $('html').animate({ scrollTop: 0 }, 500);
+      });
+    });
+  </script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- boostrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body id="home">
+  <!-- Navbar-->
+  <div>
+    <i class="fas fa-chevron-up"></i>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="resto.html"> Natural Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="resto.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Akhir Navbar-->
+
+  <!--Jumbotron  -->
+  <section class="jumbotron text-center">
+    <img src="image/IMG_2852.JPG" alt="makanan indo" width="200" class="rounded-circle img-thumbnail">
+    <h1 class="display-4">Natural Restaurant</h1>
+    <p class="lead">
+    </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,
+        480,75,576,74.7C672,75,768,117,864,154.7C960,192,1056,
+        224,1152,197.3C1248,171,1344,85,1392,42.7L1440,0L1440,
+        320L1392,320C1344,320,1248,320,1152,320C1056,320,960,
+        320,864,320C768,320,672,320,576,320C480,320,384,320,
+        288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4">
+          <p>Restoran ini didirikan pada tahun 2022 oleh team A2, yang berlokasi di Jalan Mastrip Kecamatan Sumbersari
+            Kota Jember, dengan konsep alam
+            Indonesia yang asri dipadukan dengan makanan yang berasal dari setiap daerah di Nusantara, memiliki ciri
+            khas dan rasa yang istimewa dari setiap rempah-rempahnya.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Restoran ini berdiri karena untuk melestarikan makanan khas Indonesia dengan cara mengenalkan makanan khas
+            Indonesia dengan gaya modern sehingga generasi selanjutnya atau generasi muda mengetahui makanan khas
+            Negerinya sendiri.</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1" d="M0,32L40,74.7C80,117,160,203,240,213.3C320,224,400,160,480,122.7C560,85,640,75,720, 74.7C800, 
+        75,880,85,960,122.7C1040,160,1120,224,1200,240C1280,256,1360,224,1400,208L1440,192L1440,320L1400,
+        320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320
+        ,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir About -->
+
+  <!--Menu  makanan-->
+  <section id="menuFavorit">
+    <div class="container text-center" data-aos="fade-in" data-aos-duration="2000">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Menu Favorit</h2>
+        </div>
+      </div>
+      <h3>Makanan</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2854.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Ayam Bakar</p>
+              <p>Ayam segar yang dibumbui dengan bumbu merah hingga meresap lalu dibakar dengan aroma yang menggugah
+                selera.</p>
+              <p>Rp 25.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2858.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Rawon</p>
+              <p>Makanan khas Jawa Timur yang dibuat dari potongan daging sapi pilihan dan aneka rempah yang membuat
+                masakan ini memiliki ciri khas sendiri.</p>
+              <p>Rp 15.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2856.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Rendang</p>
+              <p>Rendang atau randang adalah masakan yang berbahan dasar daging asli Indonesia yang berasal dari
+                Minangkabau.</p>
+              <p>Rp 25.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2862.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Nasi Kuning</p>
+              <p>Nasi kuning adalah makanan khas Indonesia. Nasi kuning biasa disajikan dengan bermacam lauk-pauk khas
+                Indonesia.</p>
+              <p>Rp 15.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2863.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Pempek</p>
+              <p>Pempek atau empek-empek adalah makanan yang terbuat dari daging ikan giling yang dicampur tepung kanji,
+                dan beberapa bahan seperti telur, bawang putih, penyedap rasa, dan garam.</p>
+              <p>Rp 10.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 ">
+          <div class="card" data-tilt>
+            <img src="image/IMG_2861.JPG" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Mie Ayam</p>
+              <p>Mie ayam adalah hidangan Indonesia yang terbuat dari mie gandum kuning yang dibumbui dengan daging ayam
+                yang biasanya dipotong dadu.</p>
+              <p>Rp 15.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Minuman</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/es cendol.jpg" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Es Cendol</p>
+              <p>Cendol merupakan minuman penutup es manis yang mengandung tetesan tepung beras hijau, santan, dan sirup
+                gula aren. Cendol populer di Indonesia dan Asia Tenggara lainnya.</p>
+              <p>Rp 13.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/stmj.jpg" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">STMJ</p>
+              <p>STMJ merupakan singkatan dari susu telur madu jahe. STMJ merupakan minuman populer untuk dinikmati
+                dalam keadaan hangat. STMJ ini sangat populer di daerah Jawa dan sekitarnya.</p>
+              <p>Rp 15.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-tilt>
+            <img src="image/Teh Jahe.jpg" class="card-img-top" alt="makanan">
+            <div class="card-body">
+              <p class="card-text text-center">Teh Jahe</p>
+              <p>Teh jahe merupakan minuman kaya manfaat yang mudah dibuat di rumah. Tak hanya untuk menghangatkan, jahe
+                juga baik untuk memperkuat sistem kekebalan tubuh
+              </p>
+              <p>Rp 10.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,224L40,213.3C80,203,160,181,240,149.3C320,117,400,
+        75,480,96C560,117,640,203,720,218.7C800,235,880,181,960,
+        181.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,
+        234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,
+        320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,
+        320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,
+        40,320L0,320Z">
+      </path>
+    </svg>
+
+  </section>
+  <!-- akhir menu makanan-->
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="Name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="Name" aria-describedby="Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email">
+            </div>
+            <div class="mb-3">
+              <label for="kritik dan saran" class="form-label">Kritik dan Saran</label>
+              <textarea class="form-control" id="kritik dan saran" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#198754" fill-opacity="1"
+        d="M0,160L40,165.3C80,171,160,181,240,202.7C320,224,400,256,480,
+        240C560,224,640,160,720,154.7C800,149,880,203,960,224C1040,245,
+        1120,235,1200,213.3C1280,192,1360,160,1400,144L1440,128L1440,
+        320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,
+        320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,
+        320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <!-- akhir contact -->
+
+  <!-- class pagination -->
+
+  <!-- akhir class pagination -->
+
+  <!-- footer -->
+  <footer class="bg-success text-white text-center pb-5">
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link text-bg-secondary" href="resto.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="resto.html">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link text-bg-success" href="About.html">2</a>
+        </li>
+        <li class="page-item "><a class="page-link" href="contact.php">3</a></li>
+        <li class="page-item">
+          <a class="page-link text-bg-secondary" href="resto.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="About.html" class="text-white fw-bold">Team
+        A2</a>
+    </p>
+  </footer>
+  <!-- akhir footer -->
+
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', { duration: 7, delay: 1.5, text: 'Restaurant tradisional Indonesia yang menyajikan menu makanan berasal dari rempah asli Nusantara' });
+    gsap.from('.jumbotron img', { duration: 1.5, rotateY: 360, opacity: 0 });
+    gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+    gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- my javascript -->
+  <script src="Script.js"></script>
+
+  <!-- library tilt js -->
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+
+</body>
+
+</html>
