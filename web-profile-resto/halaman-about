@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Natural Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          $('i').css({
+            "opacity": "1", "pointer-events": "auto"
+          });
+        } else {
+          $('i').css({
+            "opacity": "0", "pointer-events": "none"
+          });
+        }
+      });
+      $('i').click(function () {
+        $('html').animate({ scrollTop: 0 }, 500);
+      });
+    });
+  </script>
+  <!-- Jquery offline -->
+  <!-- <script src="../belajar_jquery/jquery-3.6.0.min.js"></script> -->
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- boostrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+  <!-- librari font awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body id="home">
+  <!-- Navbar-->
+  <div>
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="resto.html">Natural Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="resto.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Akhir Navbar-->
+
+  <!--Jumbotron  -->
+  <section class="jumbotron text-center">
+    <img src="image/IMG_2852.JPG" alt="makanan indo" width="200" class="rounded-circle img-thumbnail">
+    <h1 class="display-4">About</h1>
+    <p class="lead"></p>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="resto.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About</li>
+      </ol>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,128L48,133.3C96,139,192,149,288,133.3C384,
+        117,480,75,576,74.7C672,75,768,117,864,154.7C960,
+        192,1056,224,1152,197.3C1248,171,1344,85,1392,
+        42.7L1440,0L1440,320L1392,320C1344,320,1248,320,
+        1152,320C1056,320,960,320,864,320C768,320,672,320,
+        576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4">
+          <p>Restoran ini didirikan pada tahun 2022 oleh team A2, yang berlokasi di Jalan Mastrip Kecamatan Sumbersari
+            Kota Jember, dengan konsep alam
+            Indonesia yang asri dipadukan dengan makanan yang berasal dari setiap daerah di Nusantara, memiliki ciri
+            khas dan rasa yang istimewa dari setiap rempah-rempahnya.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Restoran ini berdiri karena untuk melestarikan makanan khas Indonesia dengan cara mengenalkan makanan khas
+            Indonesia dengan gaya modern sehingga generasi selanjutnya atau generasi muda mengetahui makanan khas
+            negerinya sendiri.</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path fill="#198754" fill-opacity="1"
+        d="M0,32L40,74.7C80,117,160,203,240,213.3C320,224,400,160,480,122.7C560,85,640,75,720,74.7C800,75,880,85,960,122.7C1040,160,1120,224,1200,240C1280,256,1360,224,1400,208L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+
+
+
+  </section>
+  <!-- Akhir About -->
+
+  <!-- footer -->
+  <footer class="bg-success text-white text-center pb-5">
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link text-bg-secondary" href="resto.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="resto.html">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link text-bg-success" href="About.html">2</a>
+        </li>
+        <li class="page-item "><a class="page-link" href="contact.php">3</a></li>
+        <li class="page-item">
+          <a class="page-link text-bg-secondary" href="resto.html">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="About.html" class="text-white fw-bold">Team
+        A2</a>
+    </p>
+  </footer>
+
+
+
+
+  <!-- akhir footer -->
+
+  <!-- library aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', { duration: 7, delay: 1.5, text: 'Restaurant tradisional Indonesia yang menyajikan menu makanan berasal dari rempah asli Nusantara' });
+    gsap.from('.jumbotron img', { duration: 1.5, rotateY: 360, opacity: 0 });
+    gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+    gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+  </script>
+
+  <!-- my javascrip -->
+  <script src="Script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
